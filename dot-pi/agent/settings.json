@@ -1,7 +1,7 @@
 {
-  "lastChangelogVersion": "0.78.1",
-  "defaultProvider": "cloudflare-workers-ai",
-  "defaultModel": "@cf/moonshotai/kimi-k2.6",
+  "lastChangelogVersion": "0.79.1",
+  "defaultProvider": "google",
+  "defaultModel": "gemini-3.1-flash-lite",
   "defaultThinkingLevel": "high",
   "enabledModels": [
     "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.6",
