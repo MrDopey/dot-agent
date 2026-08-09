@@ -1,5 +1,7 @@
 *
 !.gitignore
+!output-styles/
+!output-styles/*
 !policy-limits.json
 !remote-settings.json
 !settings.json
