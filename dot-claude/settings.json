@@ -2,6 +2,21 @@
   "permissions": {
     "defaultMode": "auto"
   },
-  "theme": "dark",
-  "tui": "fullscreen"
+  "model": "sonnet",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash '/opt/dot-agent/dot-claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "tui": "fullscreen",
+  "theme": "dark"
 }
