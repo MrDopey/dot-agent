@@ -44,6 +44,7 @@
   },
   "tui": "fullscreen",
   "theme": "dark",
+  "autoMemoryEnabled": false,
   "disableBundledSkills": true,
   "disableRemoteControl": true,
   "disableClaudeAiConnectors": true,
