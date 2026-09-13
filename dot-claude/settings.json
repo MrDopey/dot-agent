@@ -1,6 +1,22 @@
 {
   "permissions": {
-    "defaultMode": "auto"
+    "defaultMode": "auto",
+    "deny": [
+      "NotebookEdit",
+      "CronCreate",
+      "CronDelete",
+      "CronList",
+      "DesignSync",
+      "PushNotification",
+      "Monitor",
+      "ShareOnboardingGuide",
+      "EnterWorktree",
+      "ExitWorktree",
+      "TaskOutput",
+      "TaskStop",
+      "Workflow",
+      "Artifact"
+    ]
   },
   "model": "sonnet",
   "hooks": {
@@ -17,6 +33,21 @@
       }
     ]
   },
+  "enabledPlugins": {},
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  },
   "tui": "fullscreen",
-  "theme": "dark"
+  "theme": "dark",
+  "disableBundledSkills": true,
+  "disableRemoteControl": true,
+  "disableClaudeAiConnectors": true,
+  "disableArtifact": true,
+  "disableAgentView": true,
+  "enableAllProjectMcpServers": false
 }
