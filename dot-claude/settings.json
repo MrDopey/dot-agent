@@ -1,6 +1,5 @@
 {
   "permissions": {
-    "defaultMode": "auto",
     "deny": [
       "NotebookEdit",
       "CronCreate",
@@ -16,9 +15,13 @@
       "TaskStop",
       "Workflow",
       "Artifact"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "model": "sonnet",
+  "enableAllProjectMcpServers": false,
+  "disableClaudeAiConnectors": true,
+  "disableBundledSkills": true,
   "hooks": {
     "SessionStart": [
       {
@@ -33,6 +36,9 @@
       }
     ]
   },
+  "disableAgentView": true,
+  "disableRemoteControl": true,
+  "disableArtifact": true,
   "enabledPlugins": {},
   "extraKnownMarketplaces": {
     "claude-plugins-official": {
@@ -43,12 +49,7 @@
     }
   },
   "tui": "fullscreen",
-  "theme": "dark",
   "autoMemoryEnabled": false,
-  "disableBundledSkills": true,
-  "disableRemoteControl": true,
-  "disableClaudeAiConnectors": true,
-  "disableArtifact": true,
-  "disableAgentView": true,
-  "enableAllProjectMcpServers": false
+  "theme": "dark",
+  "promptSuggestionEnabled": false
 }
