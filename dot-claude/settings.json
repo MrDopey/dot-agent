@@ -19,12 +19,20 @@
     "defaultMode": "auto"
   },
   "model": "sonnet",
-  "statusLine": {
-    "type": "command",
-    "command": "sh -c 'if [ -n \"$CLAUDE_CONFIG_DIR\" ] && [ -x \"$CLAUDE_CONFIG_DIR/statusline-command.sh\" ]; then exec \"$CLAUDE_CONFIG_DIR/statusline-command.sh\"; elif [ -x \"$HOME/.claude/statusline-command.sh\" ]; then exec \"$HOME/.claude/statusline-command.sh\"; fi'"
-  },
   "enableAllProjectMcpServers": false,
   "disableClaudeAiConnectors": true,
+  "skillOverrides": {
+    "anthropic-skills:anthropic-fsi-3-statements": "off",
+    "anthropic-skills:anthropic-fsi-competitive-analysis": "off",
+    "anthropic-skills:anthropic-fsi-comps-analysis": "off",
+    "anthropic-skills:anthropic-fsi-datapack-builder": "off",
+    "anthropic-skills:anthropic-fsi-dcf-model-builder": "off",
+    "anthropic-skills:anthropic-fsi-earnings-analysis": "off",
+    "anthropic-skills:anthropic-fsi-initiating-coverage": "off",
+    "anthropic-skills:anthropic-fsi-pitch-deck": "off",
+    "anthropic-skills:anthropic-fsi-strip-profile": "off",
+    "anthropic-skills:anthropic-ppt-template-creator": "off"
+  },
   "disableBundledSkills": true,
   "hooks": {
     "SessionStart": [
@@ -43,6 +51,10 @@
   "disableAgentView": true,
   "disableRemoteControl": true,
   "disableArtifact": true,
+  "statusLine": {
+    "type": "command",
+    "command": "sh -c 'if [ -n \"$CLAUDE_CONFIG_DIR\" ] && [ -x \"$CLAUDE_CONFIG_DIR/statusline-command.sh\" ]; then exec \"$CLAUDE_CONFIG_DIR/statusline-command.sh\"; elif [ -x \"$HOME/.claude/statusline-command.sh\" ]; then exec \"$HOME/.claude/statusline-command.sh\"; fi'"
+  },
   "enabledPlugins": {},
   "extraKnownMarketplaces": {
     "claude-plugins-official": {
@@ -52,8 +64,8 @@
       }
     }
   },
+  "promptSuggestionEnabled": false,
   "tui": "fullscreen",
   "autoMemoryEnabled": false,
-  "theme": "dark",
-  "promptSuggestionEnabled": false
+  "theme": "dark"
 }
